@@ -1,5 +1,4 @@
 #PATH
-export PATH="$PATH:/mnt/d/kouseralamin/BINARY:/mnt/d/kouseralamin/BINARY/BUSYBOX"
 
 #HISTORY
 HISTSIZE=100
@@ -32,10 +31,6 @@ transfer () {
 	then
 		printf "%s\n" "$(curl --progress-bar "https://transfer.sh/" -F "filedata=@$1")"
 	else
-			printf "%s\n" "TOO MANY ARGUMENTS"
+		printf "%s\n" "TOO MANY ARGUMENTS"
 	fi
 }
-
-#START_FROM_D_DRIVE
-cd /mnt/d
-center
